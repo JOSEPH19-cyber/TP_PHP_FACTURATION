@@ -1,0 +1,26 @@
+[
+    {
+        "identifiant": "admin",
+        "mot_de_passe": "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi",
+        "role": "Super Administrateur",
+        "nom_complet": "MADIDI IMUNGA",
+        "date_creation": "2026-04-22",
+        "actif": true
+    },
+    {
+        "identifiant": "manager",
+        "mot_de_passe": "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi",
+        "role": "Manager",
+        "nom_complet": "ECKOMALE ELONGA",
+        "date_creation": "2026-04-22",
+        "actif": true
+    },
+    {
+        "identifiant": "caissier",
+        "mot_de_passe": "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi",
+        "role": "Caissier",
+        "nom_complet": "MBIKI MAHENZI",
+        "date_creation": "2026-04-22",
+        "actif": true
+    }
+]
