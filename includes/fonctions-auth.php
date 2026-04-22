@@ -16,6 +16,43 @@ function getUtilisateurs()
 
 }
 
+
+function getUtilisateurCourant() 
+{
+
+    if (!estConnecte()) 
+    {
+
+        return null;
+
+    }
+    
+    $identifiant = $_SESSION['user_identifiant'] ?? null;
+    
+    if (!$identifiant) 
+    {
+
+        return null;
+
+    }
+    
+    $utilisateurs = getUtilisateurs();
+    
+    foreach ($utilisateurs as $utilisateur) 
+    {
+
+        if ($utilisateur['identifiant'] === $identifiant) 
+        {
+
+            return $utilisateur;
+
+        }
+        
+    }
+    
+    return null;
+}
+
 function sauvegarderUtilisateurs($utilisateurs)
 {
     

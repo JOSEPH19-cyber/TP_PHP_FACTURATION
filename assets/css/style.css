@@ -965,17 +965,17 @@ body
 .scanner-viewport {
     width: 100%;
     max-width: 500px;
-    height: auto;
+    height: 300px;
     margin: 0 auto;
+    background: #000;
     border-radius: 12px;
     overflow: hidden;
-    background: #000;
-    min-height: 300px;
 }
+
 .scanner-viewport video {
     width: 100% !important;
-    height: auto !important;
-    display: block !important;
+    height: 100% !important;
+    object-fit: cover;
 }
 
 /* =========================================
@@ -1081,3 +1081,716 @@ body
 .btn-edit i {
     margin-right: 3px;
 }
+
+/* =========================================
+   CAISSE - NOUVELLE FACTURE
+   ========================================= */
+
+.caisse-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.caisse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.badge-role {
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-right: 10px;
+}
+
+.scanner-form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.scanner-form h3 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.panier-table {
+    background: white;
+    border-radius: 12px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.panier-table th,
+.panier-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.panier-table th {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+
+.panier-table th i {
+    margin-right: 5px;
+}
+
+.panier-table tr:hover {
+    background: #f8f9fa;
+}
+
+.recap {
+    background: #f0f2f5;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.recap p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+.recap p:last-child {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--success-color);
+}
+
+.actions-caisse {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-erreur {
+    background: var(--danger-color);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-erreur:hover {
+    background: #c82333;
+}
+
+.btn-valider {
+    background: var(--success-color);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-valider:hover {
+    background: #218838;
+}
+
+.btn-supprimer-ligne {
+    background: none;
+    border: none;
+    color: var(--danger-color);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.btn-supprimer-ligne:hover {
+    color: #c82333;
+}
+
+
+@media (max-width: 768px) {
+    .caisse-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .panier-table {
+        font-size: 0.8rem;
+    }
+    
+    .panier-table th,
+    .panier-table td {
+        padding: 8px 10px;
+    }
+    
+    .actions-caisse {
+        flex-direction: column;
+    }
+    
+    .actions-caisse button {
+        width: 100%;
+    }
+}
+
+/* =========================================
+   AFFICHAGE FACTURE
+   ========================================= */
+
+.facture-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.facture-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.facture-header {
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.facture-header h1 {
+    color: var(--primary-color);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+}
+
+.facture-header p {
+    color: #666;
+    margin-top: 5px;
+}
+
+.facture-infos {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.facture-infos p {
+    margin: 5px 0;
+}
+
+.facture-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.facture-table th,
+.facture-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.facture-table th {
+    background: #f0f2f5;
+    font-weight: 600;
+}
+
+.facture-totaux {
+    text-align: right;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+}
+
+.facture-totaux p {
+    margin: 5px 0;
+}
+
+.facture-totaux .total {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--success-color);
+}
+
+.actions-facture {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.btn-imprimer {
+    background: #17a2b8;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn-imprimer:hover {
+    background: #138496;
+}
+
+.btn-nouvelle {
+    background: var(--success-color);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn-nouvelle:hover {
+    background: #218838;
+}
+
+@media (max-width: 768px) {
+    .facture-container {
+        padding: 10px;
+    }
+    
+    .facture-card {
+        padding: 15px;
+    }
+    
+    .facture-infos {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .actions-facture {
+        flex-direction: column;
+    }
+    
+    .actions-facture a,
+    .actions-facture button {
+        text-align: center;
+    }
+}
+
+/* =========================================
+   HISTORIQUE FACTURES
+   ========================================= */
+
+.filtres-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.filtres-form .form-row {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.filtres-form .form-group {
+    flex: 1;
+    min-width: 150px;
+}
+
+.btn-filtrer {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-reinitialiser {
+    background: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.table-factures {
+    background: white;
+    border-radius: 12px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.table-factures th,
+.table-factures td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.table-factures th {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+
+.table-factures tr:hover {
+    background: #f8f9fa;
+}
+
+.btn-detail {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.btn-detail:hover {
+    color: var(--accent-color);
+}
+
+.statistiques {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.stat-card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-valeur {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .filtres-form .form-row {
+        flex-direction: column;
+    }
+    
+    .table-factures {
+        font-size: 0.7rem;
+    }
+    
+    .table-factures th,
+    .table-factures td {
+        padding: 6px 8px;
+    }
+    
+    .statistiques {
+        flex-direction: column;
+    }
+}
+
+/* =========================================
+   RAPPORTS JOURNALIER & MENSUEL
+   ========================================= */
+
+.rapport-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.rapport-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.rapport-header h1 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.rapport-header h1 i {
+    margin-right: 10px;
+}
+
+.rapport-form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.rapport-form .form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.rapport-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.rapport-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.btn-filtrer {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-filtrer:hover {
+    background: var(--accent-color);
+}
+
+/* Stats cartes */
+.stats-cartes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-carte {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s;
+}
+
+.stat-carte:hover {
+    transform: translateY(-5px);
+}
+
+.stat-carte i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-valeur {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* Tableau des rapports */
+.table-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.table-container h3 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.rapport-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.rapport-table th,
+.rapport-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.rapport-table th {
+    background: #f0f2f5;
+    font-weight: 600;
+    color: #333;
+}
+
+.rapport-table tr:hover {
+    background: #f8f9fa;
+}
+
+/* Actions rapports */
+.rapport-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-imprimer {
+    background: #17a2b8;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-imprimer:hover {
+    background: #138496;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .rapport-container {
+        padding: 10px;
+    }
+    
+    .rapport-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .rapport-form {
+        flex-direction: column;
+    }
+    
+    .rapport-form .form-group {
+        width: 100%;
+    }
+    
+    .btn-filtrer {
+        width: 100%;
+    }
+    
+    .stats-cartes {
+        grid-template-columns: 1fr;
+    }
+    
+    .rapport-table {
+        font-size: 0.7rem;
+    }
+    
+    .rapport-table th,
+    .rapport-table td {
+        padding: 8px 10px;
+    }
+}
+
+.btn-journalier,
+.btn-mensuel {
+    background: var(--success-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background 0.3s;
+}
+
+.btn-journalier:hover,
+.btn-mensuel:hover {
+    background: #218838;
+}
+
+/* Impression */
+@media print {
+    .rapport-header .btn-retour,
+    .rapport-form,
+    .rapport-actions,
+    .badge-role {
+        display: none;
+    }
+    
+    .rapport-container {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .stat-carte {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .rapport-table th {
+        background: #ddd;
+    }
+}
+

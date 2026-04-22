@@ -1,0 +1,170 @@
+[
+    {
+        "id_facture": "FAC-20260422-001",
+        "date": "2026-04-22",
+        "heure": "21:31:06",
+        "caissier": null,
+        "articles": [
+            {
+                "code_barre": "6009804011223",
+                "nom": "Pepsi 500ml",
+                "prix_unitaire_ht": 1000,
+                "quantite": 1,
+                "sous_total_ht": 1000
+            },
+            {
+                "code_barre": "6009804011537",
+                "nom": "Eau en bouteille",
+                "prix_unitaire_ht": 500,
+                "quantite": 10,
+                "sous_total_ht": 5000
+            },
+            {
+                "code_barre": "6009804011537",
+                "nom": "Eau en bouteille",
+                "prix_unitaire_ht": 500,
+                "quantite": 10,
+                "sous_total_ht": 5000
+            }
+        ],
+        "total_ht": 11000,
+        "tva": 1980,
+        "total_ttc": 12980
+    },
+    {
+        "id_facture": "FAC-20260422-002",
+        "date": "2026-04-22",
+        "heure": "21:35:59",
+        "caissier": null,
+        "articles": [
+            {
+                "code_barre": "6009804011223",
+                "nom": "Pepsi 500ml",
+                "prix_unitaire_ht": 1000,
+                "quantite": 4,
+                "sous_total_ht": 4000
+            },
+            {
+                "code_barre": "6009804011537",
+                "nom": "Eau en bouteille",
+                "prix_unitaire_ht": 500,
+                "quantite": 4,
+                "sous_total_ht": 2000
+            },
+            {
+                "code_barre": "6009804011537",
+                "nom": "Eau en bouteille",
+                "prix_unitaire_ht": 500,
+                "quantite": 4,
+                "sous_total_ht": 2000
+            }
+        ],
+        "total_ht": 8000,
+        "tva": 1440,
+        "total_ttc": 9440
+    },
+    {
+        "id_facture": "FAC-20260422-003",
+        "date": "2026-04-22",
+        "heure": "21:40:57",
+        "caissier": null,
+        "articles": [
+            {
+                "code_barre": "6009804011537",
+                "nom": "Eau en bouteille",
+                "prix_unitaire_ht": 500,
+                "quantite": 3,
+                "sous_total_ht": 1500
+            }
+        ],
+        "total_ht": 1500,
+        "tva": 270,
+        "total_ttc": 1770
+    },
+    {
+        "id_facture": "FAC-20260422-004",
+        "date": "2026-04-22",
+        "heure": "21:42:17",
+        "caissier": null,
+        "articles": [
+            {
+                "code_barre": "6009804011278",
+                "nom": "Pepsi 1L",
+                "prix_unitaire_ht": 1500,
+                "quantite": 3,
+                "sous_total_ht": 4500
+            },
+            {
+                "code_barre": "6009804011278",
+                "nom": "Pepsi 1L",
+                "prix_unitaire_ht": 1500,
+                "quantite": 3,
+                "sous_total_ht": 4500
+            }
+        ],
+        "total_ht": 9000,
+        "tva": 1620,
+        "total_ttc": 10620
+    },
+    {
+        "id_facture": "FAC-20260422-005",
+        "date": "2026-04-22",
+        "heure": "21:43:39",
+        "caissier": null,
+        "articles": [
+            {
+                "code_barre": "6009804011537",
+                "nom": "Eau en bouteille",
+                "prix_unitaire_ht": 500,
+                "quantite": 3,
+                "sous_total_ht": 1500
+            },
+            {
+                "code_barre": "6009804011537",
+                "nom": "Eau en bouteille",
+                "prix_unitaire_ht": 500,
+                "quantite": 3,
+                "sous_total_ht": 1500
+            }
+        ],
+        "total_ht": 3000,
+        "tva": 540,
+        "total_ttc": 3540
+    },
+    {
+        "id_facture": "FAC-20260422-006",
+        "date": "2026-04-22",
+        "heure": "21:59:40",
+        "caissier": null,
+        "articles": [
+            {
+                "code_barre": "6009804011223",
+                "nom": "Pepsi 500ml",
+                "prix_unitaire_ht": 1000,
+                "quantite": 2,
+                "sous_total_ht": 2000
+            }
+        ],
+        "total_ht": 2000,
+        "tva": 360,
+        "total_ttc": 2360
+    },
+    {
+        "id_facture": "FAC-20260422-007",
+        "date": "2026-04-22",
+        "heure": "22:21:19",
+        "caissier": null,
+        "articles": [
+            {
+                "code_barre": "6009879794687",
+                "nom": "Boisson \u00e0 la mangue",
+                "prix_unitaire_ht": 1000,
+                "quantite": 5,
+                "sous_total_ht": 5000
+            }
+        ],
+        "total_ht": 5000,
+        "tva": 900,
+        "total_ttc": 5900
+    }
+]

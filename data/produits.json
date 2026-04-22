@@ -12,7 +12,39 @@
         "nom": "Vitalo 375ml",
         "prix_unitaire_ht": 1500,
         "date_expiration": "2029-07-18",
-        "quantite_stock": 9,
+        "quantite_stock": 52,
+        "date_enregistrement": "2026-04-22"
+    },
+    {
+        "code_barre": "6009879794687",
+        "nom": "Boisson \u00e0 la mangue",
+        "prix_unitaire_ht": 1000,
+        "date_expiration": "2030-10-16",
+        "quantite_stock": 340,
+        "date_enregistrement": "2026-04-22"
+    },
+    {
+        "code_barre": "6009804011537",
+        "nom": "Eau en bouteille",
+        "prix_unitaire_ht": 500,
+        "date_expiration": "2027-06-24",
+        "quantite_stock": 40,
+        "date_enregistrement": "2026-04-22"
+    },
+    {
+        "code_barre": "6009804011223",
+        "nom": "Pepsi 500ml",
+        "prix_unitaire_ht": 1000,
+        "date_expiration": "2028-06-19",
+        "quantite_stock": 23,
+        "date_enregistrement": "2026-04-22"
+    },
+    {
+        "code_barre": "6009804011278",
+        "nom": "Pepsi 1L",
+        "prix_unitaire_ht": 1500,
+        "date_expiration": "2028-06-19",
+        "quantite_stock": 17,
         "date_enregistrement": "2026-04-22"
     }
 ]

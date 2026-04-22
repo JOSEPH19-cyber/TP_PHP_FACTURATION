@@ -50,7 +50,7 @@ $dateJour = date('d/m/Y');
                 <div class="menu-cartes">
 
                     <!-- 1. Caisse : tous les rôles -->
-                    <a href="modules/caisse.php" class="carte">
+                    <a href="module/facturation/nouvelle-facture.php" class="carte">
 
                         <div class="carte-icon"><i class="fas fa-shopping-cart"></i></div>
                         <h3>Caisse</h3>
@@ -59,7 +59,7 @@ $dateJour = date('d/m/Y');
                     </a>
 
                     <!-- 2. Historique factures : tous les rôles -->
-                    <a href="modules/liste_factures.php" class="carte">
+                    <a href="module/facturation/historique.php" class="carte">
 
                         <div class="carte-icon"><i class="fas fa-file-invoice"></i></div>
                         <h3>Historique des factures</h3>
@@ -83,7 +83,7 @@ $dateJour = date('d/m/Y');
                     <!-- 4. Rapports : Manager et Super Admin -->
                     <?php if (in_array($role, ['Manager', 'Super Administrateur'])): ?>
 
-                        <a href="rapports/journalier.php" class="carte">
+                        <a href="rapports/rapport-journalier.php" class="carte">
                             <div class="carte-icon"><i class="fas fa-chart-line"></i></div>
                             <h3>Rapports</h3>
                             <p>Consulter les rapports journaliers/mensuels</p>
