@@ -1,0 +1,18 @@
+[
+    {
+        "code_barre": "123346917z9hsjs95",
+        "nom": "Bouteille swissta 375 ml",
+        "prix_unitaire_ht": 500,
+        "date_expiration": "2028-11-29",
+        "quantite_stock": 50,
+        "date_enregistrement": "2026-04-22"
+    },
+    {
+        "code_barre": "123346917z9hsjzs95",
+        "nom": "Vitalo 375ml",
+        "prix_unitaire_ht": 1500,
+        "date_expiration": "2029-07-18",
+        "quantite_stock": 9,
+        "date_enregistrement": "2026-04-22"
+    }
+]
